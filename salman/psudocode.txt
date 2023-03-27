@@ -1,0 +1,25 @@
+Goal
+To find the last message triggered before CSAT
+
+
+For above the output is abc
+
+Body | Skill | conv_id | 
+abc     intro   123
+def     csat    123
+wgh     csat    123
+ghi     end     456
+
+For above the output is abc
+
+IF my cursor is on SKILL = CSAT AND previous_row_skill IS NOT CSAT OR next_row_skill IS NOT CSAT  
+get conversation id for that skill 
+then compare it to the previous ROW 
+IF previous_row_id == current_row_id AND previous_row_skill IS NOT CSAT 
+then 
+get previous_previous_body 
+
+
+1. import excel file in python and print the file value
+2. main code which will do 80% of work
+3. tests and final code 
